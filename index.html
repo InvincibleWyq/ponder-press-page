@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Ponder & Press: Advancing Visual GUI Agent towards General Computer Control">
+  <meta name="keywords" content="Ponder & Press">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ponder & Press: Advancing Visual GUI Agent towards General Computer Control</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.ico"> -->
+  <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Ponder & Press: Advancing Visual GUI Agent towards General Computer
+              Control</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/InvincibleWyq/">Yiqin Wang</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://zhang9302002.github.io/">Haoji Zhang </a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://trilarflagz.github.io/">Jingqi Tian </a>,</span>
+              <span class="author-block">
+                <a href="https://andytang15.github.io/">Yansong Tang </a><sup>&dagger;</sup>,</span>
+              <span class="author-block">
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Tsinghua University,</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>*</sup>Equal contribution,</span>
+              <span class="author-block"><sup>&dagger;</sup>Corresponding author,</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="TBD" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://github.com/" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code & Model (coming soon)</span>
+                  </a>
+                </span>
+
+                <!-- <span class="link-block">
+                  <a href="https://huggingface.co/IVGSZ/Flash-VStream-7b"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      &#x1F917;
+                    </span>
+                    <span>Model</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="content has-text-centered">
+    <img src="./static/images/system_design.png" alt="Flash-VStream Teaser" width="28%">
+    <figcaption>
+      <strong>Different types of frameworks for vision-based GUI agents.<br>
+        (c) combines the advantages of (a) and (b) and achieves better performance.</strong>
+      </strong>
+    </figcaption>
+  </div>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- TL;DR. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">TL;DR</h2>
+          <div class="content has-text-justified">
+            <p>
+              <strong>
+                We propose Ponder & Press, a divide-and-conquer GUI agent framework that only relies on visual input to
+                mimic human-like interaction with GUIs.
+                We evaluate Ponder & Press locator on the GUI grounding benchmark ScreenSpot, outperforming
+                previous state-of-the-art model by +22.5%.
+                We further conducted extensive evaluations of our framework on 4 widely used GUI agent benchmarks,
+                demonstrating its effectiveness in offline, online, desktop, webpage, and mobile settings.
+              </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ TL;DR. -->
+
+
+      <div class="content has-text-centered">
+        <img src="./static/images/radar_plot_slim.png" alt="Ponder & Press Radar Plot" width="50%">
+        <figcaption>
+          <strong>
+            Ponder & Press improves vision-based GUI agent on a broad range of tasks.
+          </strong>
+        </figcaption>
+      </div>
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Most existing GUI agents typically depend on non-vision inputs like HTML source code or accessibility
+              trees, limiting their flexibility across diverse software environments and platforms. Current multimodal
+              large language models (MLLMs), which excel at using vision to ground real-world objects, offer a potential
+              alternative. However, they often struggle with accurately localizing GUI elements—a critical requirement
+              for effective GUI automation—due to the semantic gap between real-world objects and GUI elements. In this
+              work, we introduce Ponder & Press, a divide-and-conquer framework for general computer control using only
+              visual input. Our approach combines an general-purpose MLLM as an `interpreter', responsible for
+              translating high-level user instructions into detailed action descriptions, with a GUI-specific MLLM as a
+              `locator' that precisely locates GUI elements for action placement. By leveraging a purely visual input,
+              our agent offers a versatile, human-like interaction paradigm applicable to a wide range of applications.
+              Ponder & Press locator outperforms existing models by +22.5% on the ScreenSpot GUI grounding benchmark.
+              Both offline and interactive agent benchmarks across various GUI environments—including web pages, desktop
+              software, and mobile UIs—demonstrate that Ponder & Press framework achieves state-of-the-art performance,
+              highlighting the potential of visual GUI agents.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Main text. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3 has-text-centered">Pipeline</h2>
+
+          <div class="content has-text-justified">
+            <p>
+            </p>
+          </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/teaser_flat.png" alt="Pipeline" width="80%">
+            <figcaption>
+              <strong>The framework of Ponder&Press agent.</strong><br>
+              The framework consists of two core components:
+              an <strong><span style="color: ForestGreen;">Instruction Interpreter</span></strong> that translates
+              high-level user instructions into actionable steps,
+              and a <strong><span style="color: #ca6924;">Visual Element Locator</span></strong> that localizes GUI
+              elements for interactions such as clicking or typing. <br>
+              Our method ensures that complex instructions can be decomposed and precisely executed within diverse GUIs.
+            </figcaption>
+
+          </div>
+
+          <h2 class="title is-3 has-text-centered">Results</h2>
+
+          <div class="content has-text-centered">
+            <img src="./static/images/performance1.png" alt="Results" width="80%">
+          </div>
+
+          <div class="content has-text-centered">
+            <img src="./static/images/performance2.png" alt="Results" width="80%">
+          </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/performance4.png" alt="Results" width="80%">
+          </div>
+          <div class="container">
+            <div class="content has-text-centered">
+              <img src="./static/images/performance3.png" alt="Results" width="80%">
+            </div>
+          </div>
+
+          <h2 class="title is-3 has-text-centered">Case Study</h2>
+
+          <div class="content has-text-centered">
+            <img src="./static/images/case_study.png" alt="Results" width="60%">
+            <figcaption>
+              <strong>Case study of Ponder & Press on an office task.</strong>
+            </figcaption>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{ponderpress,
+        title={Ponder & Press: Advancing Visual GUI Agent towards General Computer Control},
+        author={Wang, Yiqin and Zhang, Haoji and Tian, Jingqi and Tang, Yansong},
+        journal={arXiv preprint arXiv:TBD},
+        year={2024}
+  }</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>
+              &copy; Yiqin Wang 2024. Adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
